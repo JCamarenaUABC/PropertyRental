@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PropertyRental.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace PropertyRental
 {
@@ -24,6 +26,10 @@ namespace PropertyRental
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            //DBservices config
+            string ConnectionString = "Data source=Properties.db";
+            services.AddDbContext<DataContext>(optionsAction=>optionsAction.UseSqlite(ConnectionString));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

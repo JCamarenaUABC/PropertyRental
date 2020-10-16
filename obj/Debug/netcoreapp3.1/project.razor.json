@@ -14427,6 +14427,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\X\\Documents\\SDSU\\unidad 2\\107\\PropertyRental\\Views\\Catalog\\index.cshtml",
+      "TargetPath": "Views\\Catalog\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\X\\Documents\\SDSU\\unidad 2\\107\\PropertyRental\\Views\\Home\\About.cshtml",
       "TargetPath": "Views\\Home\\About.cshtml",
       "FileKind": "mvc"
